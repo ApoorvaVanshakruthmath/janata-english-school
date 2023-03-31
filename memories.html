@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janata-english-school</title>
+    <link rel="icon" type="image/x-icon" href="favion.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(35, 34, 34);
+    text-decoration: none;
+    font-size: 21px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+       @media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        
+    }
+    .nav-links{
+        position:absolute ; 
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #242424;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <img src="logo.jpg" class="round-image" alt="logo">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times " onclick="hideMenu() "></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="admission.html">Staff</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="news-ticker">
+        <ul>
+            <li>Admissions are open from 1-10th std</li>
+            <li>Admissions are open from 1-10th std</li>
+            <li>Admissions are open from 1-10th std</li>
+            <li>Admissions are open from 1-10th std</li>
+            <li>Admissions are open from 1-10th std</li>
+            <li>Admissions are open from 1-10th std</li>
+            <!-- add more news items here -->
+        </ul>
+    </div>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="11"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="12"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="13"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="14"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="15"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="16"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="memo5.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo1.jpg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo3.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo7.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="project.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo8.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="Picture3.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="old.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo11.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo12.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo13.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo14.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo23.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo24.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo25.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo26.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="memo27.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+  
+  <div class="container-fluid mt-3">
+    <h3>Our old memories</h3>
+    <p>Past years have been amazing we created a lot a memories which are ofcourse unforgetable.The previous year at my school was filled with numerous events and activities that kept us students busy and engaged throughout the academic year. These events provided us with opportunities to showcase our skills and talents, to learn new things, and to create memories that we will cherish for a lifetime.<br><br>event that was held at school last year was the science exhibition. Students from different grades participated in this event, showcasing their innovative ideas and scientific experiments. The exhibition was a great opportunity for us to learn about various scientific concepts and principles in a fun and interactive way. The exhibits were creative and informative, and they provided us with a glimpse into the exciting world of science.<br><br>The annual school play was also a highlight of the year. The students spent months preparing for this event, rehearsing their lines and perfecting their acting skills. The play was a grand production, with colourful costumes and sets that transported us to a different world. The performances of the actors were outstanding, and they kept us glued to our seats with their impeccable acting and storytelling.
+
+        Apart from these major events, there were numerous other activities that were conducted at school last year. These included cultural festivals, art competitions, quiz contests, and community service projects. These activities provided us with opportunities to develop our skills, to work in teams, and to give back to society.<br><br>Overall, the events conducted at school last year were diverse, engaging, and memorable. They provided us with opportunities to learn, grow, and create memories that we will cherish for years to come. I am grateful to my school for providing us with these enriching experiences and for making our academic journey an exciting and rewarding one. </p>
+  </div>
+    <script>
+       
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <section class="footer">
+        
+        <div class="icons">
+          <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
+            <i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
+            <i class="fab fa-twitter"></i></a>
+           
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> Hope and ease</p>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janata-english-school</title>
+    <link rel="icon" type="image/x-icon" href="favion.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<style>
+    .bold{
+        text-align: justify;
+    }
+</style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" class="round-image" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times " onclick="hideMenu() "></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="admission.html">Staff</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>JANATA ENGLISH SCHOOL KALAGATAGI</h1>
+            <p>Kalgatagi Education Committee Kalgatagi</p>
+            <a href="https://www.google.com/maps/place/Janata+English+School/@15.1781025,74.9660651,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb92b55370c7971:0x477aae422b7515cb!8m2!3d15.1781025!4d74.9682591!16s%2Fg%2F1pty232ml" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+    <div class="news-ticker">
+        <ul>
+            <li>Admissions are open from 1-9th std</li>
+            <li>Admissions are open from 1-9th std</li>
+            <li>Admissions are open from 1-9th std</li>
+            <li>Admissions are open from 1-9th std</li>
+            <li>Admissions are open from 1-9th std</li>
+            <li>Admissions are open from 1-9th std</li>
+            <!-- add more news items here -->
+        </ul>
+    </div>
+    <script>
+        // Set the width of the news ticker to the width of the window
+        document.querySelector('.news-ticker').style.width = window.innerWidth + 'px';
+
+        // Resize the news ticker when the window is resized
+        window.addEventListener('resize', function () {
+            document.querySelector('.news-ticker').style.width = window.innerWidth + 'px';
+        });
+
+    </script>
+    <section class="course">
+        <h1>We Also Provide</h1>
+        <p></p>
+        <div class="row">
+            <div class="course-col">
+                <h3>MOTIVATIONAL-SPEECHS</h3>
+                <img src="motivate.jpg" width="300" height="300" alt="midday meals">
+            </div>
+            <div class="course-col">
+                <h3>HEALTH-CHECKUP</h3>
+                <img src="health.jpg" width="95%" height="89%" alt="HEALTH-CHECKUP">
+            </div>
+            <div class="course-col">
+                <h3>MIDDAY-MEALS</h3>
+                <img src="meals.jpg" width="95%" height="89%" alt="midday meals">
+            </div>
+        </div>
+    </section>
+    <p class="bold">Providing midday meals, health checkups, and motivational speeches to students is a proactive approach that can
+        have a significant impact on their overall well-being and academic performance.<br><br>
+
+        Midday meals are essential as they provide necessary nutrition to students, ensuring that they are healthy and
+        energized throughout the day. It is especially crucial for students who may come from low-income families, where
+        access to nutritious food may be limited.<br><br>
+
+        Health checkups are also critical as they can help identify any underlying health issues that students may have,
+        such as poor eyesight or hearing difficulties, which can affect their ability to learn. Early detection and
+        intervention can make a significant difference in preventing these issues from hindering their academic
+        progress.<br><br>
+
+        Lastly, motivational speeches can inspire and encourage students to work hard, pursue their dreams, and develop
+        a positive attitude towards life. It can help boost their confidence and self-esteem, leading to improved
+        academic performance.<br><br>
+
+        Overall, providing midday meals, health checkups, and motivational speeches to students can help create a
+        conducive learning environment, promote good health, and support academic success.</p>
+    <section class="campus">
+        <h1>Our Toppers</h1>
+        <p>Our SSLC topper who made us even more proud </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="topper.jpg" alt="random">
+                <div class="layer">
+                    <h3>NINGAYYA HIREMATH</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="top.jpg" alt="random2">
+                <div class="layer">
+                    <h3>SANIYA BADAGI</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Sivraj.jpg" alt="random3">
+                <div class="layer">
+                    <h3>SHIVARAJ TIPPANAGOUDTI</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Recent Activities</h1>
+        <p>We recently conducted few activities wherein students actively participated and made the events successful</p>
+        <div class="row">
+            <div class="facilities-col">
+                     <a href="annual.html">
+                <img src="annual.jpg" width="500" height="300"></a>
+                <h3>Annual day</h3>
+                <p>Onclick to see more photos</p>
+            </div>
+            <div class="facilities-col">
+                    <a href="about.html">
+                <img src="Picture2.jpg" width="500" height="300"></a>
+                <h3>Atal Tinkering Lab Inauguration </h3>
+                <p>Onclick to see more about the lab</p>
+            </div>
+            <div class="facilities-col">
+                    <a href="science.html">
+                <img src="project.jpg" width="500" height="300"></a>
+                <h3>Science Exhibition</h3>
+                <p>Onclick to see more cool science exhibition photos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>OLD MEMORIES</h1>
+        <a href="memories.html" class="hero-btn">visit</a>
+    </section>
+    <section class="glow">
+        <a href="contact.html">
+            <button class="glow-on-hover">Admission Enquiry</button>
+        </a>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> As we look to the future, it is clear that Janata English Medium School Kalagatgi will continue to play an
+            important role in the lives of the students in this community. Its commitment to excellence and to fostering a
+            sense of community will help to shape the leaders of tomorrow and make this world a better place.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
+                <i class="fab fa-twitter"></i></a>
+               
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> Hope and ease</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

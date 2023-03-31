@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janata-english-school</title>
+    <link rel="icon" type="image/x-icon" href="favion.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<style>
+  .map{
+    float: right;
+    margin:auto;
+  }
+     .contact-details {
+       max-width:max-content;
+       margin-top: 12px;
+       margin-left: 13px;
+       padding: 20px;
+       background-color: #f2f2f2;
+       text-align: left;
+       justify-content: space-evenly;
+       height: 100%;
+     }
+     p {
+       margin-bottom: 10px;
+       font-size: 18px;
+       cursor: pointer;
+     }
+     p:hover{
+      color: #f44336;
+      transition: 0.7s;
+     }
+     strong {
+       font-weight: bold;
+     }   
+    @media (max-width:700px) {
+      .row-1{
+        flex-direction: column;
+       
+      }
+      .map{
+        flex-direction: column;
+      }
+    } 
+
+</style>
+
+</head>
+<body>
+    <section class="contact-us">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" class="round-image" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times " onclick="hideMenu() "></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="admission.html">Staff</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1 class="animate__animated animate__bounce">Contact Us</h1>
+
+        </section>
+        <!-- <section class="course"> -->
+          <h1>Contact-details</h1>
+        <div class="row-1">
+         
+        <div class="contact-details">
+            <p><strong>Address:</strong> Janata English School Kalaghatagi Vidyagiri Hiliyal road Kalaghatagi district Dharawad</p>
+            <p><strong>Head master:</strong> 9448874327
+            </p>
+            <p><strong> Chairman phone number:</strong> 9449642966
+            </p>
+              <p><strong>Secretary phone number: </strong> 94483 26972
+             </p>
+            <p><strong>PRAVEEN HIREMATH:</strong > 9886914664</p>
+            <p><strong>Email:</strong> jesklg. 1954@gmail.com</p>
+          </div>
+          <p class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.640005306247!2d74.9660650503285!3d15.178102489384921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb92b55370c7971%3A0x477aae422b7515cb!2sJanata%20English%20School!5e0!3m2!1sen!2sin!4v1680106616179!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+      </div>
+      <!-- </section> -->
+      <script>
+        var navLinks=document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+      
+        <section class="footer">
+            <h4>About Us</h4>
+            <p> As we look to the future, it is clear that Janata English Medium School Kalagatgi will continue to play an
+              important role in the lives of the students in this community. Its commitment to excellence and to fostering a
+              sense of community will help to shape the leaders of tomorrow and make this world a better place.</p>
+            <div class="icons">
+              <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
+                <i class="fab fa-twitter"></i></a>
+               
+            </div>
+            <p>Made with <i class="fas fa-heart"></i> Hope and ease</p>
+        </section>
+        </body>
+        </html>
+       
