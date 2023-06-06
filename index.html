@@ -18,6 +18,55 @@
     .bold{
         text-align: justify;
     }
+    html,body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .new-topper h1,p{
+        text-align: center;
+    }
+    .new-topper{
+        padding-left: 34px;
+    }
+    .image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+  width: 250px;
+  height: 41%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
 </style>
 </head>
 
@@ -31,14 +80,15 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="management.html">Management</a></li>
                     <li><a href="admission.html">Staff</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>JANATA ENGLISH SCHOOL KALAGATAGI</h1>
-            <p>Kalgatagi Education Committee Kalgatagi</p>
+            <h1>JANATA ENGLISH SCHOOL KALAGHATAGI</h1>
+            <p>KALAGHATAGI SHIKSHANA SAMITI KALAGHATAGI</p>
             <a href="https://www.google.com/maps/place/Janata+English+School/@15.1781025,74.9660651,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb92b55370c7971:0x477aae422b7515cb!8m2!3d15.1781025!4d74.9682591!16s%2Fg%2F1pty232ml" class="hero-btn">Visit us to know more</a>
         </div>
     </section>
@@ -69,15 +119,16 @@
         <div class="row">
             <div class="course-col">
                 <h3>MOTIVATIONAL-SPEECHS</h3>
-                <img src="motivate.jpg" width="300" height="300" alt="midday meals">
+                
+                <img src="motivate.jpg" width="300" height="300" alt="motivate">
             </div>
             <div class="course-col">
                 <h3>HEALTH-CHECKUP</h3>
-                <img src="health.jpg" width="95%" height="89%" alt="HEALTH-CHECKUP">
+                <img src="health.jpg" width="300" height="300" alt="HEALTH-CHECKUP">
             </div>
             <div class="course-col">
-                <h3>MIDDAY-MEALS</h3>
-                <img src="meals.jpg" width="95%" height="89%" alt="midday meals">
+                <h3>MIDDAY-MEALS</h3><a href="meals.html">
+                <img src="meals.jpg" width="300" height="300" alt="midday meals"></a>
             </div>
         </div>
     </section>
@@ -99,8 +150,51 @@
 
         Overall, providing midday meals, health checkups, and motivational speeches to students can help create a
         conducive learning environment, promote good health, and support academic success.</p>
+        <section class="new-topper">
+            <h1>2022-2023 TOPPERS</h1>
+            <p>Glad to announce to you our top 5 SSLC toppers</p>
+        <div class="image-container">
+            <img src="ASHAWINI WADDAR.JPG" alt="Image 1">
+           
+            <div class="overlay">
+              <h3>ASHAWINI WADDAR</h3>
+              
+            </div>
+          </div>
+          
+          <div class="image-container">
+            <img src="Anita Lamani photo.JPG" alt="Image 2">
+            <div class="overlay">
+              <h3>ANITA LAMANI</h3>
+              
+            </div>
+          </div>
+          
+          <div class="image-container">
+            <img src="Megha parage photo.JPG" alt="Image 3">
+            <div class="overlay">
+              <h3>MEGHA PARAGE</h3>
+              
+            </div>
+          </div>
+          
+          <div class="image-container">
+            <img src="Nirarnjan Uppin photo.JPG" alt="Image 4">
+            <div class="overlay">
+              <h3>NIRARNJAN UPPIN</h3>
+              
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="NAGAVENI PANDRAMISI.JPG" alt="Image 4">
+            <div class="overlay">
+              <h3>NAGAVENI PANDRAMISI</h3>
+             
+            </div>
+          </div>
+          </section>
     <section class="campus">
-        <h1>Our Toppers</h1>
+        <h1>Our Toppers 2021-22</h1>
         <p>Our SSLC topper who made us even more proud </p>
         <div class="row">
             <div class="campus-col">
@@ -134,18 +228,26 @@
                 <p>Onclick to see more photos</p>
             </div>
             <div class="facilities-col">
-                    <a href="about.html">
+                    <a href="atal.html">
                 <img src="Picture2.jpg" width="500" height="300"></a>
                 <h3>Atal Tinkering Lab Inauguration </h3>
                 <p>Onclick to see more about the lab</p>
             </div>
+            </div>
+            <div class="row">
             <div class="facilities-col">
                     <a href="science.html">
                 <img src="project.jpg" width="500" height="300"></a>
                 <h3>Science Exhibition</h3>
                 <p>Onclick to see more cool science exhibition photos</p>
             </div>
+            <div class="facilities-col">
+                <a href="rangoli.html">
+            <img src="rangoli.jpg" width="500" height="300"></a>
+            <h3>Rangoli competition</h3>
+            <p>Onclick to see more photos</p>
         </div>
+       </div>
     </section>
 
     <section class="cta">
@@ -159,14 +261,14 @@
     </section>
     <section class="footer">
         <h4>About Us</h4>
-        <p> As we look to the future, it is clear that Janata English Medium School Kalagatgi will continue to play an
+        <p> As we look to the future, it is clear that Janata English  School Kalaghatagi will continue to play an
             important role in the lives of the students in this community. Its commitment to excellence and to fostering a
             sense of community will help to shape the leaders of tomorrow and make this world a better place.</p>
         <div class="icons">
             <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
                 <i class="fab fa-facebook"></i></a>
                 <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
-                <i class="fab fa-twitter"></i></a>
+                <i class="fab fa-facebook"></i></a>
                
         </div>
         <p>Made with <i class="fas fa-heart"></i> Hope and ease</p>
