@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janata-english-school</title>
+    <link rel="icon" type="image/x-icon" href="favion.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<style>
+.sort{
+   display: inline-block;
+   overflow: hidden;
+    margin-top: 45px;
+    margin-left: 240px;
+}
+</style>
+
+</head>
+<body>
+    <section class="meals">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" class="round-image" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times " onclick="hideMenu() "></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="management.html">Management</a></li>
+                    <li><a href="admission.html">Staff</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1 class="animate__animated animate__bounce">MEALS</h1>
+
+        </section>
+        <!-- <section class="course"> -->
+            <div class="sort">
+         <img src="m1.jpg" width="1000" height="500">
+         <img src="m2.jpg"width="1000" height="500">
+         <img src="m3.jpg"width="1000" height="500">
+         <img src="m4.jpg"width="1000" height="500">
+         <img src="m5.jpg"width="1000" height="500">
+         <img src="meals.jpg"width="1000" height="500">
+        </div>
+      <!-- </section> -->
+      <script>
+        var navLinks=document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+      
+        <section class="footer">
+            <h4>About Us</h4>
+            <p> As we look to the future, it is clear that Janata English  School Kalaghatagi will continue to play an
+              important role in the lives of the students in this community. Its commitment to excellence and to fostering a
+              sense of community will help to shape the leaders of tomorrow and make this world a better place.</p>
+            <div class="icons">
+              <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+               
+            </div>
+            <p>Made with <i class="fas fa-heart"></i> Hope and ease</p>
+        </section>
+        </body>
+        </html>
+       
