@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janata-english-school</title>
+    <link rel="icon" type="image/x-icon" href="favion.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<style>
+    html,body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+ .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .image-container img {
+        margin-left: 12px;
+        margin-top: 12px;
+      width: 75%;
+      height: 66vh;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image-container p {
+      margin-top: 10px;
+      font-size: 21px;
+      font-weight: bold;
+      color: #f44336;
+    }
+    @media(max-width:700px){
+        .image-grid{
+            grid: gap 12px;
+        }
+        .image-container{
+            display: block;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img{
+            width: 75%;
+            height: 45vh;
+        }
+        .image-container p{
+            font-size: large;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <!-- <script>
+        // JavaScript to disable scrolling when the navigation bar is hidden
+        function disableScroll() {
+          document.body.style.overflow = 'hidden';
+        }
+        
+        function enableScroll() {
+          document.body.style.overflow = 'auto';
+        }
+        
+        window.addEventListener('resize', function() {
+          if (window.innerWidth < 700) {
+            disableScroll();
+          } else {
+            enableScroll();
+          }
+        });
+      </script> -->
+    <section class="sub-header-1">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" class="round-image" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times " onclick="hideMenu() "></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="management.html">Management</a></li>
+                    <li><a href="admission.html">Staff</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>Management</h1>
+        </section>
+        <div class="image-grid">
+            <div class="image-container">
+              <img src="chairman.jpg" alt="Image 1">
+              <p>DR.H.B PATIL<BR>CHAIRMAN</p>
+            </div>
+            <div class="image-container">
+              <img src="secretary.jpg" alt="Image 1">
+              <p>Shri K B PATILKULKARNI SECRETARY</p>
+            </div>
+            <div class="image-container">
+              <img src="head.jpg" alt="Image 1">
+              <p>SRI. S K PATILKULKARNI<br>MANAGEMENT MEMBER</p>
+            </div>
+            <div class="image-container">
+              <img src="MANAGEMENT.jpg" alt="Image 1">
+              <p>SRI. NANDEESH H PATIL<br>MANAGEMENT MEMBER</p>
+            </div>
+            <div class="image-container">
+              <img src=".jpg" alt="Image 1">
+              <p>SRI. S S SAVUKAR<br>MANAGEMENT MEMBER</p>
+            </div>
+            <div class="image-container">
+              <img src=".jpg" alt="V J nadgear">
+              <p>SRI. V.J NADGEAR</p>
+            </div>
+            <div class="image-container">
+              <img src=".jpg" alt="G V kanekar">
+              <p>SRI.G.V.KANEKAR<br>MANAGEMENT MEMBER</p>
+            </div>
+            <!-- Add more image containers as needed -->
+          </div>
+            <script>
+                var navLinks=document.getElementById("navLinks");
+                
+                function showMenu(){
+                    navLinks.style.right="0";
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px";
+                }
+            </script>
+        
+        <section class="footer">
+            <h4>About Us</h4>
+            <p> As we look to the future, it is clear that Janata English  School Kalaghatagi will continue to play an
+                important role in the lives of the students in this community. Its commitment to excellence and to fostering a
+                sense of community will help to shape the leaders of tomorrow and make this world a better place.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/people/ATL-Janata-English-SchoolKalaghatagi/100063789262192/?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/jes.kalaghatagi.5?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i></a>
+                
+            </div>
+            <p class="center">Made with <i class="fas fa-heart"></i> Hope and ease</p>
+        </section>
+        </body>
+        </html>
+     
